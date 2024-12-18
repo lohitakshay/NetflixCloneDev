@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo Installing dependencies
+      - apt-get update
+      - apt-get install -y <dependencies if any>
+  build:
+    commands:
+      - echo Building the application
+      - <build commands>
+artifacts:
+  files:
+    - '**/*'
